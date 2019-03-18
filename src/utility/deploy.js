@@ -3,7 +3,7 @@ const ghpages = require('gh-pages');
 ghpages.publish(
   'public', {
     branch: 'gh-pages',
-    repo: 'https://github.com/metalcanine/fx-win32k-report.github.io.git',
+    repo: 'https://github.com/metalcanine/metalcanine.github.io.git',
   },
   (err) => {
     if (!err) {
