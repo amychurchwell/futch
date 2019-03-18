@@ -1,0 +1,33 @@
+{
+  "name": "metalcanine.github.io",
+  "private": true,
+  "description": "a place to keep links to my work and all my cute things",
+  "version": "0.1.0",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "gatsby": "^2.1.31",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "prettier": "^1.16.4"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "npx rimraf node_modules/ .cache/ public/",
+    "deploy": "node ./deploy.js",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metalcanine/metalcanine.github.io/"
+  },
+  "bugs": {
+    "url": "https://github.com/metalcanine/metalcanine.github.io/issues"
+  }
+}
