@@ -3,7 +3,7 @@ const ghpages = require('gh-pages');
 ghpages.publish(
   'public', {
     branch: 'gh-pages',
-    repo: 'https://github.com/metalcanine/metalcanine.github.io.git',
+    repo: 'https://github.com/metalcanine/futch.git',
   },
   (err) => {
     if (!err) {

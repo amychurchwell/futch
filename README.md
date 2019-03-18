@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://www.metalcanine.github.io">metalcanine.github.io</a>
+  <a href="https://www.futch.dev">futch.dev</a>
 </h1>
 
 the source for my website including my blog, project list, and bio
