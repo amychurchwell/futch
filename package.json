@@ -2,32 +2,34 @@
   "name": "futch.dev",
   "private": true,
   "description": "a place to keep links to my work and all my cute things",
+  "repository": "https://github.com/metalcanine/futch/",
+  "bugs": "https://github.com/metalcanine/futch/issues",
   "version": "0.1.0",
   "license": "BSD-3-Clause",
-  "dependencies": {
-    "gatsby": "^2.1.31",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
-  },
-  "devDependencies": {
-    "gh-pages": "^2.0.1",
-    "prettier": "^1.16.4"
-  },
   "scripts": {
     "build": "gatsby build",
-    "clean": "npx rimraf node_modules/ .cache/ public/",
-    "deploy": "node ./src/utility/deploy.js",
+    "clean": "npx rimraf node_modules/ .cache/ public/ **/__snapshots__/",
+    "deploy": "npm run build && node ./src/utility/deploy.js",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/metalcanine/futch/"
+  "dependencies": {
+    "gatsby": "^2.7.1",
+    "gatsby-source-filesystem": "^2.0.37",
+    "gatsby-transformer-json": "^2.1.11",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
-  "bugs": {
-    "url": "https://github.com/metalcanine/futch/issues"
+  "devDependencies": {
+    "babel-jest": "^24.8.0",
+    "babel-preset-gatsby": "^0.1.11",
+    "gh-pages": "^2.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.17.1",
+    "react-test-renderer": "^16.8.6"
   }
 }

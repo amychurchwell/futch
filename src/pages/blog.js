@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Header from '../components/header';
-import Footer from '../components/footer';
+import Sidebar from '../components/sidebar/sidebar';
 
 export default () => (
-  <div>
-    <Header />
-    <p>here are thoughts no one asked for!</p>
-    <Footer />
+  <div className="wrapper">
+    <Sidebar />
+    <div className="page">
+      <h2>Here are thoughts no one asked for!</h2>
+    </div>
   </div>
 );

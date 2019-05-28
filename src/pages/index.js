@@ -1,19 +1,18 @@
 import React from 'react';
 
-import Header from '../components/header';
-import Footer from '../components/footer';
+import Sidebar from '../components/sidebar/sidebar';
 
 export default () => (
-  <div>
-    <Header />
-    <div>game dev - sea siren - wolf queen</div>
-    <div>on the internet, no one can tell if you're a dog!</div>
-    <div>
-      <div>i am very sleepy and busy please call back later thanks</div>
-      <div>stay safe, ily</div>
-      <div>should you need me for kind words or collaboration</div>
-      <div>please, never hesitate to get in touch</div>
+  <div className="wrapper">
+    <Sidebar />
+    <div className="page">
+      <h2>Programmer - Sea Siren - Wolf Queen</h2>
+      <p>I am very sleepy and busy please call back later thanks</p>
+      <p>
+        Should you need me for kind words or collaboration please, never
+        hesitate to get in <a href="mailto:juniper.r.wilde@gmail.com">touch</a>
+      </p>
+      <p>Stay safe, ily</p>
     </div>
-    <Footer />
   </div>
 );
