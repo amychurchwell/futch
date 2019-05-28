@@ -4,7 +4,7 @@ ghpages.publish(
   'public',
   {
     branch: 'gh-pages',
-    repo: 'https://github.com/metalcanine/fx-win32k-report.git',
+    repo: 'https://github.com/metalcanine/futch.git',
   },
   (err) => {
     if (!err) {
