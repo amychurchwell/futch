@@ -9,7 +9,6 @@ export default () => (
       <h2>June is a rad programmer</h2>
       <p>She's lesbians</p>
       <p>She's a huge fan of dogs</p>
-      <p>She's love use third person</p>
       <p>Elle est Cadienne et Créole de Louisiane</p>
       <p>
         She's doing platform engineering at{' '}
