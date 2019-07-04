@@ -1,4 +1,6 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import Sidebar from '../components/sidebar/sidebar';
 
@@ -16,3 +18,17 @@ export default () => (
     </div>
   </div>
 );
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "portrait.png" }) {
+      childImageSharp {
+        fluid(
+          maxWidth: 800
+        ) {
+          base64
+        }
+      }
+    }
+  }
+`;
