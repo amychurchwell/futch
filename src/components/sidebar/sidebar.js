@@ -6,33 +6,28 @@ import sidebarStyles from './sidebar.module.css';
 export default () => (
   <div className={sidebarStyles.sidebar}>
     <div className={[sidebarStyles.div_one, sidebarStyles.title].join(' ')}>
-      <Link to="/">juniper wilde</Link>
-    </div>
-    <div className={sidebarStyles.div_two}>
       <Link to="/">
-        <img src="/portrait.png" alt="my beautiful face" />
+        <img src="/portrait.png" alt="a cute dog" />
+        juniper wilde
       </Link>
     </div>
+    <div className={sidebarStyles.div_two}>
+      <Link to="/">⚜️home</Link>
+    </div>
     <div className={sidebarStyles.div_three}>
-      <Link to="/">home</Link>
+      <Link to="/love">💛love</Link>
     </div>
     <div className={sidebarStyles.div_four}>
-      <Link to="/about">about</Link>
+      <Link to="/blog">🗒️blog</Link>
     </div>
     <div className={sidebarStyles.div_five}>
-      <Link to="/blog">blog</Link>
+      <Link to="/work">⚒️work</Link>
     </div>
-    <div className={sidebarStyles.div_six} />
+    <div className={sidebarStyles.div_six}>
+      <Link to="/about">👩‍💻about</Link>
+    </div>
     <div className={sidebarStyles.div_seven}>
-      <iframe
-        title="abelian"
-        width="100%"
-        height="100%"
-        id="abelian-webring-nav"
-        src="https://abelian.now.sh/embed/"
-        frameBorder="no"
-        scrolling="no"
-      />
+      copyright juniper wilde 2019
     </div>
   </div>
 );

@@ -4,10 +4,9 @@
   position: sticky;
   top: 0;
   bottom: 0;
-  border-right: solid 6px #7c60a9;
+  border-right: solid 6px #4b568b;
 
   font-size: 24px;
-  font-style: italic;
   letter-spacing: 0.6em;
 }
 
@@ -15,18 +14,19 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 4px;
 
   border-radius: 50%;
-  border: solid #7c60a9;
+  border: solid #4b568b;
   border-width: 3px;
 
-  height: 12vh;
+  height: 6vh;
 }
 
 .sidebar a {
   display: block;
   text-decoration: none;
-  color: #000505;
+  color: #2b2b2b
 }
 
 .sidebar a:hover {
@@ -40,47 +40,44 @@
 }
 
 .title {
-  font-size: 38px;
-  text-align: center;
+  font-size: 24px;
   letter-spacing: normal;
-}
-
-.div_one {
-  background: #3e5c76;
   height: 16vh;
 }
 
+.div_one {
+  background: #9267b4;
+}
+
 .div_two {
-  background: #4b568b;
+  background: #aa6ebe;
   height: 14vh;
 }
 
 .div_three {
-  background: #66599f;
+  background: #c276c8;
   height: 14vh;
-  text-align: center;
 }
 
 .div_four {
-  background: #9267b4;
+  background: #d27ec9;
   height: 14vh;
-  text-align: center;
 }
 
 .div_five {
-  background: #c276c8;
+  background: #dd86c3;
   height: 14vh;
-  text-align: center;
 }
 
 .div_six {
-  background: #dd86c3;
+  background: #e78ebc;
   height: 14vh;
-  text-align: center;
 }
 
 .div_seven {
   background: #f196b5;
   height: 14vh;
-  text-align: center;
+  font-size: 10px;
+  letter-spacing: normal;
+  color: rgba(43, 43, 43, 0.3);
 }

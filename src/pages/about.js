@@ -21,6 +21,17 @@ export default () => (
         She's making digital friends at{' '}
         <a href="https://github.com/rosegardencult">rose garden cult</a>
       </p>
+      <p>
+        <iframe
+          title="abelian"
+          width="100%"
+          height="100%"
+          id="abelian-webring-nav"
+          src="https://abelian.now.sh/embed/"
+          frameBorder="no"
+          scrolling="no"
+        />
+      </p>
     </div>
   </div>
 );
