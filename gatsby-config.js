@@ -1,11 +1,18 @@
 module.exports = {
   siteMetadata: {
     title: `realm of the wolf queen`,
+    author: `juniper wilde`,
+    description: `links to my projects, blog, and short bio!`,
+    siteUrl: `https://www.futch.dev`,
   },
   plugins: [
-    `gatsby-transformer-json`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/content/static/`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -14,11 +21,28 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-transformer-remark`,
       options: {
-        name: `images`,
-        path: `${__dirname}/content/static/`,
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+              linkImagesToOriginal: false,
+            },
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              inlineCodeMarker: '>',
+              showLineNumbers: true,
+            },
+          },
+          `gatsby-remark-emoji`,
+        ],
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
 };
