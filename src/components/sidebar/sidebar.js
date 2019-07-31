@@ -12,19 +12,19 @@ export default () => (
       </Link>
     </div>
     <div className={sidebarStyles.div_two}>
-      <Link to="/">⚜️home</Link>
+      <Link to="/">⚜️ home</Link>
     </div>
     <div className={sidebarStyles.div_three}>
-      <Link to="/love">💛love</Link>
+      <Link to="/love">💛 love</Link>
     </div>
     <div className={sidebarStyles.div_four}>
-      <Link to="/blog">🗒️blog</Link>
+      <Link to="/blog">🗒️ blog</Link>
     </div>
     <div className={sidebarStyles.div_five}>
-      <Link to="/work">⚒️work</Link>
+      <Link to="/work">⚒️ work</Link>
     </div>
     <div className={sidebarStyles.div_six}>
-      <Link to="/about">👩‍💻about</Link>
+      <Link to="/about">👩‍💻 about</Link>
     </div>
     <div className={sidebarStyles.div_seven}>
       copyright juniper wilde 2019
