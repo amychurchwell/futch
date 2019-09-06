@@ -4,7 +4,7 @@ date: "2019-08-26T00:00:00.0Z"
 description: a cross post from Nathalie's blog
 ---
 
-By nathalie | Published August 26, 2019
+`the following is cross posted with consent from Nathalie Lawhead's blog in order to support her`
 
 On November 4 2008 I was contacted by a studio in Vancouver to design and build an ARG for their new IP.
 I talked about my experiences of working with this company before. For example, [in this post](https://gamejolt.com/@alienmelon/post/so-how-is-it-like-being-a-woman-in-tech-c6uzvwbd).
