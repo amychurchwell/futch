@@ -16,27 +16,31 @@
     "serve": "gatsby serve",
     "test": "jest"
   },
+  "engines": {
+    "node": ">6",
+    "npm": ">12"
+  },
   "dependencies": {
-    "gatsby": "^2.7.1",
-    "gatsby-image": "^2.0.38",
-    "gatsby-plugin-sharp": "^2.0.34",
+    "gatsby": "^2.15.8",
+    "gatsby-image": "^2.2.17",
+    "gatsby-plugin-sharp": "^2.2.20",
     "gatsby-remark-emoji": "0.0.3",
-    "gatsby-remark-images": "^3.1.2",
-    "gatsby-remark-prismjs": "^3.3.1",
-    "gatsby-source-filesystem": "^2.0.37",
-    "gatsby-transformer-remark": "^2.6.0",
-    "gatsby-transformer-sharp": "^2.1.18",
-    "prismjs": "^1.16.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "gatsby-remark-images": "^3.1.20",
+    "gatsby-remark-prismjs": "^3.3.12",
+    "gatsby-source-filesystem": "^2.1.21",
+    "gatsby-transformer-remark": "^2.6.21",
+    "gatsby-transformer-sharp": "^2.2.13",
+    "prismjs": "^1.17.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   },
   "devDependencies": {
-    "babel-jest": "^24.8.0",
+    "babel-jest": "^24.9.0",
     "babel-preset-gatsby": "^0.1.11",
-    "gh-pages": "^2.0.1",
+    "gh-pages": "^2.1.1",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^24.8.0",
+    "jest": "^24.9.0",
     "prettier": "^1.17.1",
-    "react-test-renderer": "^16.8.6"
+    "react-test-renderer": "^16.9.0"
   }
 }
