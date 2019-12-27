@@ -19,6 +19,7 @@ html {
 
 .page h2 {
   font-size: 1.4em;
+  padding-bottom: 1.2em;
 }
 
 .page p {
@@ -26,6 +27,23 @@ html {
   padding-top: 1.4em;
   padding-bottom: 1.4em;
   text-indent: 4em;
+}
+
+.page .post {
+  margin-bottom: 1.2em;
+}
+
+.page .postTitle {
+  font-size: x-large;
+  margin-bottom: 0.3em;
+}
+
+.page .postDate {
+  font-size: initial;
+}
+
+.page .postExcerpt {
+  line-height: 1.4em;
 }
 
 .gatsby-highlight {
