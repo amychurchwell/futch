@@ -29,6 +29,13 @@ html {
   text-indent: 4em;
 }
 
+.page .indentlessLine {
+  line-height: 1.4em;
+  padding-top: initial;
+  padding-bottom: 0.6em;
+  text-indent: initial;
+}
+
 .page .post {
   margin-bottom: 1.2em;
 }

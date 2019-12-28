@@ -10,7 +10,7 @@ export default (props) => {
     <div className="wrapper">
       <Sidebar />
       <div className="page">
-        <h2>June posts, baked with love!</h2>
+        <h2>Blog posts, baked with love!</h2>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
           return (
