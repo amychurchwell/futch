@@ -1,4 +1,4 @@
-import './src/styles/reset.css';
-import './src/styles/global.css';
-import './src/styles/prism.css';
-import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
+import './src/styles/reset.scss';
+import './src/styles/global.scss';
+import './src/styles/prism.scss';
+require("prismjs/plugins/line-numbers/prism-line-numbers.css")

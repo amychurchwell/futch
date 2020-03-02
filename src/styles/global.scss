@@ -1,0 +1,79 @@
+@import './includes/lib';
+
+/* ♥ - - - - - - - - - - - - - ♥ */
+// Global Styles
+
+html, body {
+  color: #1e232c;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lavenderblush;
+}
+
+/* ♥ - - - - - - - - - - - - - ♥ */
+// Layout
+
+footer {
+  padding: 15px;
+  
+  small {
+    color: #4b568b;
+    font-size: 10px;
+  }
+}
+
+.page {
+  padding: 30px;
+  
+  @media #{$mq-md} {
+    margin-left: 20%;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    padding-bottom: 1.2em;
+  }
+
+  p {
+    padding-bottom: 1.4em;
+    padding-top: 1.4em;
+    text-indent: 4em;
+  }
+
+  .indentlessLine {
+    line-height: 1.4em;
+    padding-bottom: 0.6em;
+    padding-top: initial;
+    text-indent: initial;
+  }
+}
+
+/* ♥ - - - - - - - - - - - - - ♥ */
+// Posts
+
+.post {
+  margin-bottom: 1.2em;
+}
+
+.postTitle {
+  font-size: x-large;
+  margin-bottom: 0.3em;
+}
+
+.postDate {
+  font-size: initial;
+}
+
+.postExcerpt {
+  line-height: 1.4em;
+}
+
+/* ♥ - - - - - - - - - - - - - ♥ */
+// Webring
+
+#abelian-webring-nav {
+  display: none;
+
+  @media #{$mq-md} {
+    display: block;
+  }
+}

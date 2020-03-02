@@ -1,22 +1,19 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import Sidebar from '../components/sidebar/sidebar';
+import Layout from "../components/layout";
 
 export default (props) => (
-  <div className="wrapper">
-    <Sidebar />
-    <div className="page">
-      <h2>{props.data.markdownRemark.frontmatter.title}</h2>
-      <h4>{props.data.markdownRemark.frontmatter.date}</h4>
-      <div
-        className="post"
-        dangerouslySetInnerHTML={{
-          __html: props.data.markdownRemark.html,
-        }}
-      />
-    </div>
-  </div>
+  <Layout>
+    <h2>{props.data.markdownRemark.frontmatter.title}</h2>
+    <h4>{props.data.markdownRemark.frontmatter.date}</h4>
+    <div
+      className="post"
+      dangerouslySetInnerHTML={{
+        __html: props.data.markdownRemark.html,
+      }}
+    />
+  </Layout>
 );
 
 export const pageQuery = graphql`

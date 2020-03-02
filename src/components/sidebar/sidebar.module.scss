@@ -1,0 +1,147 @@
+@import '../../styles/includes/lib';
+
+/* ♥ - - - - - - - - - - - - - ♥ */
+// Desktop Sidebar Navigation
+
+nav {
+  background: #9267b4;
+  font-weight: bold;
+  letter-spacing: 0.6em;
+  margin: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+
+  a {
+    color: #2b2b2b;
+    text-decoration: none;
+    
+    &:hover {
+      color: #000505;
+    }
+  }
+
+  @media #{$mq-md} {
+    border-right: solid 6px #4b568b;
+    box-sizing: border-box;
+    float: inline-start;
+    font-size: 24px;
+    left: 0;
+    margin: 0 20px 0 0;
+    min-height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    text-align: center;
+    width: 20%;
+
+    .container {
+      display: block !important; // refactor in sidebar.js
+    }
+
+    button {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      width: 100%;
+
+      li {
+        display: flex;
+        flex: 1;
+
+        span {
+          display: inline-block;
+        }
+
+        a {
+          flex: 1;
+        }
+      }
+    }
+  }
+}
+
+/* ♥ - - - - - - - - - - - - - ♥ */
+// Logo
+
+nav img {
+  display: none;
+
+  @media #{$mq-md} {
+    border-radius: 50%;
+    border-width: 3px;
+    border: solid #4b568b;
+    display: block;
+    height: 8vh;
+    margin: 0 auto;
+    padding: 4px;
+  }
+}
+
+.title {
+  display: none;
+
+  @media #{$mq-md} {
+    display: block;
+    font-size: 24px;
+    letter-spacing: normal;
+    margin: 15px 0;
+  }
+}
+
+/* ♥ - - - - - - - - - - - - - ♥ */
+// Nav Colors
+
+// TODO: gradient color function for li.
+
+.div_two {
+  background: #aa6ebe;
+}
+
+.div_three {
+  background: #c276c8;
+}
+
+.div_four {
+  background: #d27ec9;
+}
+
+.div_five {
+  background: #dd86c3;
+}
+
+.div_six {
+  background: #e78ebc;
+}
+
+.div_seven {
+  background: #f196b5;
+}
+
+/* ♥ - - - - - - - - - - - - - ♥ */
+// Hamburger Nav
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  float: right;
+  margin: 10px 5px;
+}
+
+ul {
+  text-align: center;
+  width: 120px;
+
+  li {
+    padding: 10px 5px;
+
+    span {
+      display: none;
+    }
+  }
+}
